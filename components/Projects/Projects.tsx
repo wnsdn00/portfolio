@@ -17,12 +17,12 @@ const projects = [
       · 여행 목적지 기반 활동 추천
       · 로그인 / 회원가입 기능
       · 반응형 UI 설계
-      · Firebase 연동
+      · 시간의 효율
     `,
   },
   {
-    title: "Portfolio Website",
-    description: "애니메이션 기반 인터랙티브 포트폴리오 사이트",
+    title: "Portfolio",
+    description: "포트폴리오 사이트",
     tech: ["Next.js", "TypeScript", "React", "Framer Motion", "TailwindCSS"],
     link: "https://github.com/wnsdn00/portfolio",
     image: "/portfolio.png",
@@ -48,7 +48,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="min-h-screen flex flex-col items-center pt-24 px-6">
+    <section id="projects" className="min-h-screen flex flex-col items-center pt-24">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 120, damping: 12 }}
-            className="group flex flex-col md:flex-row bg-zinc-900/40 backdrop-blur-md border border-zinc-800 rounded-2xl hover:border-zinc-600 p-6 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transition-all duration-300 cursor-pointer"
+            className="group flex flex-col md:flex-row bg-zinc-900/40 backdrop-blur-md border border-zinc-800 rounded-2xl hover:border-zinc-600 p-6 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transition-all duration-300 cursor-pointer max-w-150 mx-auto"
             onClick={() => setSelected(project)}
           >
             {/* Thumbnail */}
@@ -77,7 +77,7 @@ export default function Projects() {
               <Image
                 src={project.image}
                 alt={project.title}
-                width={200}
+                width={150}
                 height={100}
                 className="rounded-xl object-cover group-hover:scale-105 transition-all duration-500"
               />
