@@ -15,7 +15,7 @@ export default function SkillSection() {
   const [selected, setSelected] = useState("");
 
   return (
-    <section id="skills" className="w-full max-w-4xl mx-auto py-12 -mt-40 transition-all">
+    <section id="skills" className="w-full mx-auto py-12 -mt-40 transition-all">
       <h2 className="text-xl font-bold text-center mb-8">기술 스택 및 도구</h2>
 
       {/* 카테고리 버튼 */}
@@ -36,26 +36,27 @@ export default function SkillSection() {
       </div>
 
       {/* 아이콘 리스트 */}
-      <div className="w-full max-w-[320px] sm:max-w-[450px] mx-auto">
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 text-center">
+      <div className="w-full max-w-[350px] mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 text-center">
           {skills.map((skill) => {
             const isDimmed = selected && skill.category !== selected;
 
             return (
               <div
                 key={skill.name}
-                className={`flex flex-col items-center justify-center p-1 rounded-xl text-black bg-white border border-white transition-all duration-300 cursor-pointer
+                className={`group relative flex flex-col items-center justify-center pb-3 rounded-sm border-white transition-all duration-300
                   ${isDimmed ? "opacity-20 blur-[2px]" : "opacity-100 blur-0"}
                 `}
               >
                 <Image
                   src={skill.icon}
-                  width={40}
-                  height={40}
+                  width={45}
+                  height={45}
                   alt={skill.name}
-                  className="mb-2"
+                  className="mb-2 relative z-10"
                 />
-                <span className="text-sm">{skill.name}</span>
+                <span className="text-xs z-20 absolute bottom-1 opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300
+                bg-white/30 text-white px-2 rounded whitespace-nowrap w-auto">{skill.name}</span>
               </div>
             );
           })}

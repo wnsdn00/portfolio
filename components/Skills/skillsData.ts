@@ -1,7 +1,7 @@
 export const skills = [
   {
     name: "Javascript",
-    category: "library",
+    category: "frontend",
     icon: "/images/javascript.svg",
   },
   {
@@ -27,31 +27,31 @@ export const skills = [
   {
     name: "Styled-components",
     category: "library",
-    icon: "/images/react.svg",
+    icon: "/images/styledcompoent.svg",
   },
   {
     name: "Tanstack-query",
     category: "library",
-    icon: "/images/react.svg",
+    icon: "/images/tanstack.png",
   },
   {
     name: "Zustand",
     category: "library",
-    icon: "/images/react.svg",
+    icon: "/images/zustand.svg",
   },
   {
     name: "Github",
     category: "deploy",
-    icon: "/icons/firebase.svg",
+    icon: "/images/github.svg",
   },
   {
     name: "Vercel",
     category: "deploy",
-    icon: "/icons/vercel.svg",
+    icon: "/images/vercel.svg",
   },
   {
     name: "Figma",
     category: "design",
-    icon: "/icons/figma.svg",
+    icon: "/images/figma.svg",
   },
 ];
