@@ -25,7 +25,7 @@ const projects = [
     description: "포트폴리오 사이트",
     tech: ["Next.js", "TypeScript", "React", "Framer Motion", "TailwindCSS"],
     link: "https://github.com/wnsdn00/portfolio",
-    image: "/portfolio.png",
+    image: "/images/nomadia.svg",
     details: `
       · Framer Motion 기반 인터랙션 구현
       · 컴포넌트 구조 설계
