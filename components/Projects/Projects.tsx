@@ -21,6 +21,19 @@ const projects = [
     `,
   },
   {
+    title: "DodamDodam",
+    description: "가족 소통 어플리케이션",
+    tech: ["kotlin", "Firebase"],
+    link: "https://nomadia-two.vercel.app/",
+    image: "/images/nomadia.svg",
+    details: `
+      · 여행 목적지 기반 활동 추천
+      · 로그인 / 회원가입 기능
+      · 반응형 UI 설계
+      · 시간의 효율
+    `,
+  },
+  {
     title: "Portfolio",
     description: "포트폴리오 사이트",
     tech: ["Next.js", "TypeScript", "React", "Framer Motion", "TailwindCSS"],
