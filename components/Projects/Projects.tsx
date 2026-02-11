@@ -24,7 +24,7 @@ const projects = [
     title: "DodamDodam",
     description: "가족 소통 어플리케이션",
     tech: ["kotlin", "Firebase"],
-    link: "https://nomadia-two.vercel.app/",
+    link: "https://github.com/wnsdn00/DodamDodam",
     image: "/images/nomadia.svg",
     details: `
       · 여행 목적지 기반 활동 추천
@@ -37,7 +37,7 @@ const projects = [
     title: "Portfolio",
     description: "포트폴리오 사이트",
     tech: ["Next.js", "TypeScript", "React", "Framer Motion", "TailwindCSS"],
-    link: "https://github.com/wnsdn00/portfolio",
+    link: "https://portfolio-kappa-murex-63.vercel.app/",
     image: "/images/nomadia.svg",
     details: `
       · Framer Motion 기반 인터랙션 구현
