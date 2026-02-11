@@ -55,8 +55,9 @@ export default function SkillSection() {
                   alt={skill.name}
                   className="mb-2 relative z-10"
                 />
-                <span className="text-xs z-20 absolute bottom-1 opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300
-                bg-white/30 text-white px-2 rounded whitespace-nowrap w-auto">{skill.name}</span>
+                <span className="text-xs z-20 absolute bottom-1 opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white/30 text-white px-2 rounded whitespace-nowrap w-auto">
+                  {skill.name}
+                </span>
               </div>
             );
           })}
