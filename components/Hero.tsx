@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <section id="home" className="min-h-screen flex flex-col items-center justify-center text-center">
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl font-semibold tracking-tight space-y-2"
+        className="to text-5xl font-semibold tracking-tight space-y-2"
       >
         <motion.div>안녕하세요,</motion.div>
         <motion.div>프론트엔드 개발자</motion.div>
@@ -36,7 +36,7 @@ export default function Hero() {
           whileTap={{ scale: 0.95 }}
           className="px-6 py-3 rounded-xl text-white font-semibold  bg-gray-800 hover:bg-gray-900 transition-all duration-300"
         >
-          이력서 다운로드
+          자기소개서 다운로드
         </motion.a>
 
         {/* GitHub 연결 */}
@@ -50,6 +50,38 @@ export default function Hero() {
         >
           GitHub
         </motion.a>
+      </motion.div>
+
+      {/* --- 아래로 스크롤 가이드 --- */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 1 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        >
+          <span className="text-sm text-zinc-500 font-medium">내려서 확인하기</span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="text-zinc-400"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+          </svg>
+        </motion.div>
       </motion.div>
     </section>
   );

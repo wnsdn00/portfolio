@@ -15,8 +15,8 @@ export default function SkillSection() {
   const [selected, setSelected] = useState("");
 
   return (
-    <section id="skills" className="w-full mx-auto py-12 -mt-40 transition-all">
-      <h2 className="text-xl font-bold text-center mb-8">기술 스택 및 도구</h2>
+    <section id="skills" className="w-full mx-auto pt-24  transition-all">
+      <h2 className="text-xl font-bold text-center mb-10">기술 스택 및 도구</h2>
 
       {/* 카테고리 버튼 */}
       <div className="flex justify-center gap-3 flex-wrap mb-10">
@@ -24,9 +24,9 @@ export default function SkillSection() {
           <button
             key={cat.key}
             onClick={() => setSelected(selected === cat.key ? "" : cat.key)}
-            className={`px-4 py-2 rounded-full border transition
+            className={`px-3 py-1.5 rounded-full border transition
               ${selected === cat.key 
-                ? "bg-[#ECFA2C] text-black border-[#ECFA2C]" 
+                ? "bg-[#7AAACE] text-black border-[#7AAACE]" 
                 : "bg-white text-black border-gray-300 hover:bg-gray-100"}
             `}
           >
@@ -36,7 +36,7 @@ export default function SkillSection() {
       </div>
 
       {/* 아이콘 리스트 */}
-      <div className="w-full max-w-[350px] mx-auto">
+      <div className="w-full max-w-[400px] mx-auto">
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 text-center">
           {skills.map((skill) => {
             const isDimmed = selected && skill.category !== selected;

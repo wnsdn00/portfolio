@@ -25,12 +25,12 @@ const projects = [
     description: "가족 소통 어플리케이션",
     tech: ["kotlin", "Firebase"],
     link: "https://github.com/wnsdn00/DodamDodam",
-    image: "/images/nomadia.svg",
+    image: "/images/dodam.png",
     details: `
-      · 여행 목적지 기반 활동 추천
-      · 로그인 / 회원가입 기능
-      · 반응형 UI 설계
-      · 시간의 효율
+      · 구성원에 대해 알아갈 수 있는 랜덤질문 기능
+      · 구성원과의 약속을 지킬수 있는 미션 기능
+      · 구성원과의 추억을 기록할 수 있는 다이어리 기능
+      · 내 프로필을 설정할 수 있는 마이페이지 기능
     `,
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     description: "포트폴리오 사이트",
     tech: ["Next.js", "TypeScript", "React", "Framer Motion", "TailwindCSS"],
     link: "https://portfolio-kappa-murex-63.vercel.app/",
-    image: "/images/nomadia.svg",
+    image: "/images/portfolio.svg",
     details: `
       · Framer Motion 기반 인터랙션 구현
       · 컴포넌트 구조 설계
@@ -92,7 +92,7 @@ export default function Projects() {
                 alt={project.title}
                 width={150}
                 height={100}
-                className="rounded-xl object-cover group-hover:scale-105 transition-all duration-500"
+                className="object-cover group-hover:scale-105 transition-all duration-500"
               />
             </div>
 
