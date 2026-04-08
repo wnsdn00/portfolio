@@ -42,7 +42,6 @@ const projects = [
     details: `
       · Framer Motion 기반 인터랙션 구현
       · 컴포넌트 구조 설계
-      · 다크모드 스타일링
       · Motion Layout Animation 적용
     `,
   },
