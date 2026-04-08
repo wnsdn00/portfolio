@@ -19,15 +19,15 @@ export default function Header() {
           whileHover={{scale: 1.1}}
           transition={{type: "spring", stiffness: 300 }}
           onClick={() => handleScroll("home")}>
-          Logo
+          Portpolio
         </motion.div>
 
         {/* Navigation Menu */}
         <ul className="flex gap-6 text-zinc-300 text-sm">
+          <li className="hover:text-white cursor-pointer transition" onClick={() => handleScroll("home")}>소개</li>
           <li className="hover:text-white cursor-pointer transition" onClick={() => handleScroll("skills")}>기술</li>
           <li className="hover:text-white cursor-pointer transition" onClick={() => handleScroll("projects")}>프로젝트</li>
           <li className="hover:text-white cursor-pointer transition" onClick={() => handleScroll("about")}>경력</li>
-          <li className="hover:text-blue-400 font-semibold cursor-pointer transition" onClick={() => handleScroll("contact")}>연락처</li>
         </ul>
       </nav>
     </header>
