@@ -12,6 +12,7 @@ const projects = [
     description: "노마드를 위한 액티비티 예약 플랫폼",
     tech: ["Next.js", "TypeScript", "React", "TailwindCSS"],
     link: "https://nomadia-two.vercel.app/",
+    githubLink: "https://github.com/wnsdn00/nomadia",
     image: "/images/nomadia.svg",
     details: `
       · 여행 목적지 기반 활동 추천
@@ -24,7 +25,7 @@ const projects = [
     title: "DodamDodam",
     description: "가족 소통 어플리케이션",
     tech: ["kotlin", "Firebase"],
-    link: "https://github.com/wnsdn00/DodamDodam",
+    githubLink: "https://github.com/wnsdn00/DodamDodam",
     image: "/images/dodam.png",
     details: `
       · 구성원에 대해 알아갈 수 있는 랜덤질문 기능
@@ -38,6 +39,7 @@ const projects = [
     description: "포트폴리오 사이트",
     tech: ["Next.js", "TypeScript", "React", "Framer Motion", "TailwindCSS"],
     link: "https://portfolio-kappa-murex-63.vercel.app/",
+    githubLink: "https://github.com/wnsdn00/portfolio",
     image: "/images/portfolio.svg",
     details: `
       · Framer Motion 기반 인터랙션 구현

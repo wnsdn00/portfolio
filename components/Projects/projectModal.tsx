@@ -36,15 +36,34 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             {project.details}
           </pre>
 
-          <a
-            href={project.link}
-            target="_blank"
-            className="block mt-6 py-2 px-4 text-center rounded-xl font-semibold border border-zinc-600 hover:bg-white hover:text-black transition-all duration-300"
-          >
-            배포 사이트 보기 →
-          </a>
+          {/* 버튼 영역 */}
+          <div className="flex gap-4 mt-6">
+            {/* 배포 사이트 버튼 */}
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 block py-2 px-4 text-center rounded-xl font-semibold border border-zinc-600 hover:bg-white hover:text-black transition-all duration-300"
+              >
+                배포 사이트 보기 →
+              </a>
+            )}
 
-          {/* Close Button */}
+            {/* 깃허브 버튼 */}
+            {project.githubLink && (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 block py-2 px-4 text-center rounded-xl font-semibold border border-zinc-600 hover:bg-white hover:text-black transition-all duration-300"
+              >
+                깃허브 연결하기 →
+              </a>
+            )}
+          </div>
+
+          {/* 창 닫음 버튼 */}
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-zinc-400 hover:text-white"
