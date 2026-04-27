@@ -10,17 +10,17 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section id="about" className=" flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl w-full">
         {/* Section Title */}
         <motion.h2 
           {...fadeInUp}
-          className="text-4xl font-semibold mb-16 text-center"
+          className="text-xl font-semibold mb-16 text-center"
         >
-          About Me
+          경력
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
           {/* 왼쪽: 소개글 */}
           <motion.div 
@@ -29,8 +29,8 @@ export default function About() {
             className="space-y-10"
           >
             <h3 className="text-2xl font-bold text-white">
-              동작 원리를 깊이 파고들며 <br/>
-              문제를 해결하는 <br/>
+              동작 <span className="text-green-600">원리</span>를 깊이 파고들며 <br/>
+              문제를 <span className="text-green-600">해결</span>하는 <br/>
               프론트엔드 개발자입니다
             </h3>
             <p className="text-lg text-zinc-400 leading-relaxed">
@@ -49,33 +49,33 @@ export default function About() {
             <div className="relative">
               {/* 타임라인 포인트 점 */}
               <div className="absolute w-3 h-3 bg-white rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
-              <span className="text-sm font-mono text-zinc-500">2025. 08</span>
+              <span className="text-md font-mono text-zinc-500">2025. 08</span>
               <h4 className="text-lg font-semibold text-white mt-1">
                 코드잇 프론트엔드 엔지니어 부트캠프 15기 수료
               </h4>
-              <p className="text-sm text-zinc-400 mt-1">실무 중심 프로젝트 및 협업 경험 습득</p>
+              <p className="text-[15px] text-zinc-400 mt-1">실무 중심 프로젝트 및 협업 경험 습득</p>
             </div>
 
             {/* 이력 아이템 2 */}
             <div className="relative">
               <div className="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
-              <span className="text-sm font-mono text-zinc-500">2025. 02</span>
+              <span className="text-md font-mono text-zinc-500">2025. 02</span>
               <h4 className="text-lg font-semibold text-white mt-1">
                 건국대학교 글로컬캠퍼스 소프트웨어전공 졸업
               </h4>
-              <p className="text-xs text-zinc-500 mt-2 leading-relaxed">
-                자료구조, 알고리즘, 운영체제, 데이터베이스, 네트워크 등 CS 핵심 역량 습득
+              <p className="text-[15px] text-zinc-500 mt-2 leading-relaxed">
+                자료구조, 알고리즘, 운영체제, 데이터베이스,<br/> 웹프로그래밍 등 CS 핵심 역량 중심 지식 습득
               </p>
             </div>
 
             {/* 이력 아이템 3 */}
             <div className="relative">
               <div className="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
-              <span className="text-sm font-mono text-zinc-500">2024. 06</span>
+              <span className="text-md font-mono text-zinc-500">2024. 06</span>
               <h4 className="text-lg font-semibold text-white mt-1">
                 RESAT 프론트엔드 개발 챌린지 수료
               </h4>
-              <p className="text-sm text-zinc-400 mt-1">팀 프로젝트 기반 프론트엔드 개발 프로세스 경험</p>
+              <p className="text-[15px] text-zinc-400 mt-1">팀 프로젝트 기반 프론트엔드 개발 프로세스 경험</p>
             </div>
           </motion.div>
         </div>
