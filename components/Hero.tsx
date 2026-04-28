@@ -30,7 +30,7 @@ export default function Hero() {
       <motion.div className="mt-8 flex gap-4">
         {/* 이력서 다운로드 */}
         <motion.a
-          href="/self-introduction.hwp"
+          href="/self-introduction.pdf"
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
