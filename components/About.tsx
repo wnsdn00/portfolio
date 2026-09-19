@@ -17,7 +17,7 @@ export default function About() {
           {...fadeInUp}
           className="text-xl font-semibold mb-16 text-center"
         >
-          경력
+          경험 / 경력
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -49,14 +49,32 @@ export default function About() {
             <div className="relative">
               {/* 타임라인 포인트 점 */}
               <div className="absolute w-3 h-3 bg-white rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
-              <span className="text-md font-mono text-zinc-500">2025. 08</span>
+              <span className="text-md font-mono text-zinc-500">2026.07 ~ 2026.09</span>
+              <h4 className="text-lg font-semibold text-white mt-1">
+                (주)위스마트
+              </h4>
+              <p className="text-[15px] text-zinc-400 mt-1">
+                <li>화면 정의서 정리<br/></li>
+                - 사용자 동선과 컴포넌트 단위의 예외 흐름을 정의하여 프론트엔드 개발 가이드라인 정리<br/>
+                <li>오라클 AS-IS 코드를 SQL(Hana) 쿼리로 변경</li>
+                - Oracle 기반으로 작성되어 있던 코드들을 DB환경에 맞춘 SQL 쿼리로 최적화
+                <li>페이로드 작성</li>
+                - 프론트엔드와 벡엔드 간 효율적인 소통을 위해 데이터를 주고 받는 스펙을 정리
+              </p>
+            </div>
+
+            {/* 이력 아이템 2 */}
+            <div className="relative">
+              {/* 타임라인 포인트 점 */}
+              <div className="absolute w-3 h-3 bg-white rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
+              <span className="text-md font-mono text-zinc-500">2025.02 ~ 2025.08</span>
               <h4 className="text-lg font-semibold text-white mt-1">
                 코드잇 프론트엔드 엔지니어 부트캠프 15기 수료
               </h4>
               <p className="text-[15px] text-zinc-400 mt-1">실무 중심 프로젝트 및 협업 경험 습득</p>
             </div>
 
-            {/* 이력 아이템 2 */}
+            {/* 이력 아이템 3 */}
             <div className="relative">
               <div className="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
               <span className="text-md font-mono text-zinc-500">2025. 02</span>
@@ -68,7 +86,7 @@ export default function About() {
               </p>
             </div>
 
-            {/* 이력 아이템 3 */}
+            {/* 이력 아이템 4 */}
             <div className="relative">
               <div className="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
               <span className="text-md font-mono text-zinc-500">2024. 06</span>
