@@ -49,7 +49,7 @@ export default function About() {
             <div className="relative">
               {/* 타임라인 포인트 점 */}
               <div className="absolute w-3 h-3 bg-white rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
-              <span className="text-md font-mono text-zinc-500">2026.07 ~ 2026.11</span>
+              <span className="text-md font-mono text-zinc-500">2026.07 ~ 2026.11(재직중)</span>
               <h4 className="text-lg font-semibold text-white mt-1">
                 (주)위스마트
               </h4>
@@ -74,15 +74,16 @@ export default function About() {
                 </li>
               </ul>
             </div>
+
             {/* 이력 아이템 2 */}
             <div className="relative">
               {/* 타임라인 포인트 점 */}
-              <div className="absolute w-3 h-3 bg-white rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
+              <div className="absolute w-3 h-3 bg-zinc-600 rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
               <span className="text-md font-mono text-zinc-500">2025.02 ~ 2025.08</span>
               <h4 className="text-lg font-semibold text-white mt-1">
                 코드잇 프론트엔드 엔지니어 부트캠프 15기 수료
               </h4>
-              <p className="text-[15px] text-zinc-400 mt-1">실무 중심 프로젝트 및 협업 경험 습득</p>
+              <p className="text-[15px] text-zinc-400 mt-1">- 실무 중심 프로젝트 및 협업 경험 습득</p>
             </div>
 
             {/* 이력 아이템 3 */}
@@ -93,7 +94,7 @@ export default function About() {
                 건국대학교 글로컬캠퍼스 소프트웨어전공 졸업
               </h4>
               <p className="text-[15px] text-zinc-500 mt-2 leading-relaxed">
-                자료구조, 알고리즘, 운영체제, 데이터베이스,<br/> 웹프로그래밍 등 CS 핵심 역량 중심 지식 습득
+                - 자료구조, 알고리즘, 운영체제, 데이터베이스,<br/> 웹프로그래밍 등 CS 핵심 역량 중심 지식 습득
               </p>
             </div>
 
@@ -104,7 +105,7 @@ export default function About() {
               <h4 className="text-lg font-semibold text-white mt-1">
                 RESAT 프론트엔드 개발 챌린지 수료
               </h4>
-              <p className="text-[15px] text-zinc-400 mt-1">팀 프로젝트 기반 프론트엔드 개발 프로세스 경험</p>
+              <p className="text-[15px] text-zinc-400 mt-1">- 팀 프로젝트 기반 프론트엔드 개발 프로세스 경험</p>
             </div>
           </motion.div>
         </div>
