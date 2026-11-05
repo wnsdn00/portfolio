@@ -49,20 +49,31 @@ export default function About() {
             <div className="relative">
               {/* 타임라인 포인트 점 */}
               <div className="absolute w-3 h-3 bg-white rounded-full -left-[30px] top-1.5 border-2 border-zinc-900" />
-              <span className="text-md font-mono text-zinc-500">2026.07 ~ 2026.09</span>
+              <span className="text-md font-mono text-zinc-500">2026.07 ~ 2026.11</span>
               <h4 className="text-lg font-semibold text-white mt-1">
                 (주)위스마트
               </h4>
-              <p className="text-[15px] text-zinc-400 mt-1">
-                <li>화면 정의서 정리<br/></li>
-                - 사용자 동선과 컴포넌트 단위의 예외 흐름을 정의하여 프론트엔드 개발 가이드라인 정리<br/>
-                <li>오라클 AS-IS 코드를 SQL(Hana) 쿼리로 변경</li>
-                - Oracle 기반으로 작성되어 있던 코드들을 DB환경에 맞춘 SQL 쿼리로 최적화
-                <li>페이로드 작성</li>
-                - 프론트엔드와 벡엔드 간 효율적인 소통을 위해 데이터를 주고 받는 스펙을 정리
-              </p>
+              <ul className="text-zinc-400 mt-1 space-y-4">
+                <li>
+                  <strong className="text-[15px] text-zinc-200 block">화면 및 기능 정의서 작성</strong>
+                  <p className="text-[13px] text-zinc-400 mt-0.5">
+                    - 요구사항 기반 화면 구성 및 Functional Design(FD) 정의서 작성<br/>프론트엔드 개발 가이드라인 정리
+                  </p>
+                </li>
+                <li>
+                  <strong className="text-[15px] text-zinc-200 block">DB & 쿼리 리팩토링</strong>
+                  <p className="text-[13px] text-zinc-400 mt-0.5">
+                    - 레거시 Oracle 쿼리 분석 및 SAP HANA ANSI SQL 변환/최적화
+                  </p>
+                </li>
+                <li>
+                  <strong className="text-[15px] text-zinc-200 block">인터페이스 정의</strong>
+                  <p className="text-[13px] text-zinc-400 mt-0.5">
+                    - 시스템 간 데이터 송수신을 위한 API Payload Specification <br/>상세 설계 문서 작성
+                  </p>
+                </li>
+              </ul>
             </div>
-
             {/* 이력 아이템 2 */}
             <div className="relative">
               {/* 타임라인 포인트 점 */}
